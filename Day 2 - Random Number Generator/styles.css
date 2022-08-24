@@ -17,4 +17,35 @@ p {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter {
+    width: 60rem;
+    padding: 3rem;
+    background-color: rgb(96, 47, 38);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.counter > * {
+    margin-bottom: 2rem;
+}
+
+.count {
+    font-size: 4rem;
+}
+
+.buttons button {
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
 }
