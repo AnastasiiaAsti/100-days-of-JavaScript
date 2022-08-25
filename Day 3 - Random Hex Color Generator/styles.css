@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter {
+    width: 60rem;
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.counter > * {
+    margin-bottom: 3rem;
+}
+
+.count {
+    font-size: 4rem;
+    border: 1px solid black;
+    padding: 0 1rem;
+}
+
+.buttons button {
+    width: 40%;
+    padding: 1rem;
+    margin: 3rem 2rem 0 2rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
