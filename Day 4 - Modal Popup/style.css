@@ -35,6 +35,14 @@ header h1 {
     line-height: 1;
 }
 
+header p {
+    margin-bottom: 3rem;
+}
+
+header i {
+    font-size: 5rem;
+}
+
 header h1 span {
     font-weight: 700;
 }
@@ -84,14 +92,13 @@ form button:hover {
     padding: 2rem;
     border: 10px solid rgb(223, 223, 25);
     text-align: center;
-    animation: slide ease .8s;
+    animation: slide ease 0.8s;
 }
 
 @keyframes slide {
-    from {
-        transform: translateY(-30);
+    0% {
+        transform: translateY(-30rem);
     }
-    to {
-        transform: translateY(0);
-    }
+    100% {
+        transform: translateY(0);    }
 }
