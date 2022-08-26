@@ -65,7 +65,7 @@ form button:hover {
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -87,3 +87,11 @@ form button:hover {
     animation: slide ease .8s;
 }
 
+@keyframes slide {
+    from {
+        transform: translateY(-30);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
