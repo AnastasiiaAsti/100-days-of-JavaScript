@@ -19,5 +19,8 @@ generates random hex color and displays it as a background
 
 <img width="703" alt="Screen Shot 2022-08-25 at 11 04 11 AM" src="https://user-images.githubusercontent.com/97631462/186737716-81ec0bb1-5eb8-42da-a9e3-fad9550b8a04.png">
 
+Day 4 Modal/Popup
+
+<img width="747" alt="Day_4" src="https://user-images.githubusercontent.com/97631462/186980447-ae8987b3-6131-42fd-9a30-ea6b34b102fa.png">
 
 
