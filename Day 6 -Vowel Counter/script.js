@@ -17,6 +17,7 @@ function countVowel() {
             vowelCount++;
         }
     }
-    results.innerHTML = `${word.value.toUpperCase()} has ${vowelCount} vowels`; 
+    results.innerHTML = `${word.value.toUpperCase()} has ${vowelCount} vowels`;
+    document.getElementById("form").value = '';
 }
 
