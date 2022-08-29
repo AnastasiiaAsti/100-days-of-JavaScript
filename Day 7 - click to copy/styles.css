@@ -26,3 +26,7 @@ p {
 .box {
     height: 100vh;
 }
+
+.btn {
+    width: 25%;
+}
