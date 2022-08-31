@@ -172,6 +172,7 @@ main nav .slide {
 section .content {
     margin: 3rem auto;
     text-align: center;
+    width: 80%;
 }
 
 .content > i {
@@ -194,7 +195,6 @@ section .content {
 }
 
 .content form {
-    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
