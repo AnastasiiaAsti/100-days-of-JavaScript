@@ -255,7 +255,7 @@ section .content {
     position: relative;
 }
 
-.content form textarea {
+.content textarea {
     width: 100%;
     height: 10rem;
     outline: none;
