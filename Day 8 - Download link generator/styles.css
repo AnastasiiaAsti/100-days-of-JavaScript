@@ -132,3 +132,12 @@ main nav .slide {
     transition: all .3s;
 }
 
+/*radio buttons styling*/
+
+#audio:checked ~ nav .slide {
+    left: 33%;
+}
+
+#video:checked ~ nav .slide {
+    left: 67%;
+}
