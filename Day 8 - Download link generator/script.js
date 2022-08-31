@@ -7,6 +7,7 @@ const copyAudio = document.querySelector(".copy-audio");
 const copyVideo = document.querySelector(".copy-video");
 
 
+
 btn.addEventListener('click', generateLink);
 
 function generateLink(e) {
@@ -16,10 +17,12 @@ function generateLink(e) {
     const gLinkValue = gLink.value;
     const confirmLink = gLink.value.includes('https://drive.google.com/file/d/');
     // console.log(confirmLink)
-    if (confirmLink == true) {
+    if (confirmLink === true) {
         const getDownloadLink = gLinkValue.replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=download&id=").replace("/view?usp=sharing", "");
         // console.log(getDownloadLink)
         downloadLink.value = getDownloadLink;
+        gLink.value = "";
+
 
         function copyText(target) {
             if (target.value === "") {
@@ -27,13 +30,11 @@ function generateLink(e) {
             } else {
                 target.select();
                 document.execCommand('copy');
-                copy.innerHTML = 'COPIED!';
-                copyAudio.innerHTML = 'COPIED!';
-                copyVideo.innerHTML = 'COPIED!';
 
             }
         }
         copy.addEventListener('click', () => {
+            copy.innerHTML = 'COPIED!';
             return copyText(downloadLink);
         })
 
@@ -45,6 +46,7 @@ function generateLink(e) {
 
         //copy audio
         copyAudio.addEventListener("click", () => {
+            copyAudio.innerHTML = 'COPIED!';
             return copyText(embedAudio);
         })
 
@@ -57,8 +59,12 @@ function generateLink(e) {
 
         //copy video
         copyVideo.addEventListener("click", () => {
+            copyVideo.innerHTML = 'COPIED!';
             return copyText(embedVideo);
         })
+    } else {
+        downloadLink.innerHTML = "Please add a valid Google Drive Link ;)"
+        gLink.value = "";
     }
 }
 
