@@ -13,3 +13,52 @@ p {
     line-height: 1.5;
 }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    font-size: 1.6rem;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(255, 200, 0);
+    padding-top: 5rem;
+}
+.instructions h2 {
+    font-size: 3.5rem;
+    color: rgb(0, 126, 53);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.instructions h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 2px;
+    background-color: white;
+}
+
+.instructions hr {
+    margin: 15px 0;
+}
+
+.instructions ol {
+    padding: 1rem 0 0 1.5rem;
+}
+
+.instructions a {
+    color: rgb(0, 126, 53);
+    text-decoration: none;
+    font-weight: bolder;
+}
