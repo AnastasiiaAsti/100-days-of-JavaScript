@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --lightgreen: rgb(60, 167, 104);
+    --green: rgb(48, 134, 84);
+    --red: rgb(226, 141, 92);
+    --yellow: rgb(255, 200, 0);
+}
+
 html {
     font-size: 10px;
 }
@@ -12,7 +19,6 @@ p {
     font-size: 1.6rem;
     line-height: 1.5;
 }
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -28,12 +34,12 @@ p {
     font-size: 1.6rem;
     width: 30%;
     height: 100vh;
-    background-color: rgb(255, 200, 0);
+    background-color: var(--yellow);
     padding-top: 5rem;
 }
 .instructions h2 {
     font-size: 3.5rem;
-    color: rgb(0, 126, 53);
+    color: var(--lightgreen);
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 5px;
@@ -46,19 +52,83 @@ p {
     bottom: 0;
     width: 25%;
     height: 2px;
-    background-color: white;
+    background-color: var(--lightgreen);
 }
 
 .instructions hr {
     margin: 15px 0;
+    color:var(--lightgreen);
 }
 
 .instructions ol {
     padding: 1rem 0 0 1.5rem;
 }
 
-.instructions a {
-    color: rgb(0, 126, 53);
+.instructions ol a {
+    color: var(--lightgreen);
     text-decoration: none;
     font-weight: bolder;
 }
+
+.download-link {
+    width: 70%;
+    padding-top: 5rem;
+    background-color: var(--lightgreen);
+    color: white;
+}
+
+.download-link section {
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+}
+
+main h1 {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+main input[type=radio] {
+    display: none;
+}
+
+main nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--green);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+main nav label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+
+}
+
+main nav label i {
+    padding-right: 5px;
+    color: var(--yellow);
+}
+
+main nav .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background-color: var(--red);
+    z-index: -1;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
