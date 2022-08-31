@@ -32,4 +32,19 @@ Day 6 Vowel Counter
 <img width="749" alt="Screen Shot 2022-08-29 at 11 58 05 AM" src="https://user-images.githubusercontent.com/97631462/187277248-59c5caf6-42f6-463e-b664-4d099a873aa0.png">
 
 
+Day 7 Click to copy
+
+<img width="749" alt="Screen Shot 2022-08-29 at 12 43 57 PM" src="https://user-images.githubusercontent.com/97631462/187802855-6543ab72-b075-41f9-9a69-547461ad2ef5.png">
+
+
+Day 8 Google Direct Link Generator
+
+<img width="1010" alt="Screen Shot 2022-08-31 at 4 33 23 PM" src="https://user-images.githubusercontent.com/97631462/187802960-1c9ae55d-f22e-48d5-8e24-76e69b91b2e8.png">
+
+
+
+
+
+
+
 
