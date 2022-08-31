@@ -9,6 +9,8 @@
     --green: rgb(48, 134, 84);
     --red: rgb(226, 141, 92);
     --yellow: rgb(255, 200, 0);
+    --valid: rgb(98, 255, 164);
+    --invalid:rgb(255, 170, 120);
 }
 
 html {
@@ -166,3 +168,75 @@ main nav .slide {
     display: block;
 }
 
+/*form styles*/
+
+section .content {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.content > i {
+    font-size: 5rem;
+    color: var(--yellow);
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 5rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    line-height: 2;
+    padding: 0 1rem;
+    color: var(--yellow);
+    position: relative;
+}
+
+.content p {
+    padding-bottom: 1rem;
+}
+
+.content form {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content form label {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content form input {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem 0;
+    outline: none;
+    transition: all .3s;
+}
+
+.content form .btn {
+    background-color: var(--red);
+    border: none;
+    color: whitesmoke;
+    padding: 1rem;
+    outline: none;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.content form input:focus:invalid {
+    font-size: 1.6rem;
+    border-bottom: 3px solid var(--invalid);
+    background-color: rgb(255, 220, 200);
+}
+
+.content form input:valid {
+    font-size: 1.6rem;
+    border-bottom: 3px solid var(--valid);
+    background-color: rgb(193, 251, 217);
+}
