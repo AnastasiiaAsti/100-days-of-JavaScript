@@ -39,7 +39,8 @@ Day 7 Click to copy
 
 Day 8 Google Direct Link Generator
 
-<img width="1010" alt="Screen Shot 2022-08-31 at 4 33 23 PM" src="https://user-images.githubusercontent.com/97631462/187802960-1c9ae55d-f22e-48d5-8e24-76e69b91b2e8.png">
+
+<img width="821" alt="Screen Shot 2022-08-31 at 4 45 01 PM" src="https://user-images.githubusercontent.com/97631462/187803917-0afcb7b5-a762-4d61-8020-89711b968ffe.png">
 
 
 
