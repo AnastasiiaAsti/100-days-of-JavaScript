@@ -141,3 +141,28 @@ main nav .slide {
 #video:checked ~ nav .slide {
     left: 67%;
 }
+
+/* #paste:checked ~ nav label.paste,
+#audio:checked ~ nav label.audio,
+#video:checked ~ nav label.video {
+    color: var(--green);
+} */
+
+/*Add logic to radio/tabs*/
+
+.content {
+    display: none;
+}
+
+#paste:checked ~ section .content-link {
+    display: block;
+}
+
+#audio:checked ~ section .content-audio {
+    display: block;
+}
+
+#video:checked ~ section .content-video {
+    display: block;
+}
+
