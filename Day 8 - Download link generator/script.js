@@ -51,7 +51,7 @@ function generateLink(e) {
         })
 
         //Embed video function
-        const getVideoLink = gLink.value.replace("/video?usp=sharing", "");
+        const getVideoLink = gLinkValue.replace("/video?usp=sharing", "");
         const videoStart = '<iframe src="';
         const videoEnd = '/preview" width="560" height="315"></iframe>';
         const embedVideo = document.getElementById("embed-video");
