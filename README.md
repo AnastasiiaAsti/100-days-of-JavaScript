@@ -43,6 +43,12 @@ Day 8 Google Direct Link Generator
 <img width="821" alt="Screen Shot 2022-08-31 at 4 45 01 PM" src="https://user-images.githubusercontent.com/97631462/187803917-0afcb7b5-a762-4d61-8020-89711b968ffe.png">
 
 
+Day 9 Input Character Counter
+
+<img width="754" alt="Screen Shot 2022-09-01 at 11 37 42 AM" src="https://user-images.githubusercontent.com/97631462/187988232-5a664a12-aa9a-4f82-ac20-34ad95e9b8e5.png">
+
+
+
 
 
 
