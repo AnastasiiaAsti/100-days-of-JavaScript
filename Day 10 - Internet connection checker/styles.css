@@ -24,12 +24,20 @@ p {
     height: 100vh;
 }
 
-section {
-    background-color: rgb(174, 133, 212);
-}
 
 section h1 {
-    color: aliceblue;
-    font-size: 3rem;
-    
+    color: rgb(158, 191, 67);
+    font-size: 5rem;
+
+}
+
+section img {
+    width: 30%;
+    border-radius: 20rem;
+    margin: 5rem;
+}
+
+.online {
+    color: white;
+    background-color: rgb(174, 133, 212);
 }
