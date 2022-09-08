@@ -22,7 +22,7 @@ setInterval(async () => {
         statusDisplay.textContent = "You are ONLINE! Connection looks good";
         setColor();
     }
-})
+}, 5000);
 
 
         // window.addEventListener("load", (evt) => {
