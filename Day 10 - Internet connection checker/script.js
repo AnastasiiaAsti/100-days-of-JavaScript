@@ -2,14 +2,9 @@ const image = document.getElementById("image");
 const statusDisplay = document.getElementById("status");
 const bgColor = document.getElementById("main");
 
-function setColor() {
-    bgColor.classList.add("online")
-}
 
 async function connectionStatus() {
     try {
-        setColor();
-        return fetchRe
     } catch (error) {
         statusDisplay.textContent = "OOOOPSS!! Your Internet connection is down";
         bgColor.classList.remove("online");
@@ -20,15 +15,18 @@ setInterval(async () => {
     const result = await connectionStatus();
     if (result) {
         statusDisplay.textContent = "You are ONLINE! Connection looks good";
-        setColor();
+        bgColor.classList.add(".online");
     }
 }, 5000);
 
 
-        // window.addEventListener("load", (evt) => {
-        //     const statusDisplay = document.getElementById("status");
-        //     statusDisplay.textContent = navigator.online ? "Online" : "Offline";
-        // })
+window.addEventListener("load", (evt) => {
+    if (connectionStatus()) {
+        statusDisplay.textContent = "You are ONLINE!";
+    } else {
+        statusDisplay.textContent = "You are OFFLINE!";
+    }
+})
 
         // window.addEventListener("offline", (evt) => {
         //     const statusDisplay = document.getElementById("status");
