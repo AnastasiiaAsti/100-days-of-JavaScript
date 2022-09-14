@@ -76,3 +76,20 @@ p {
     color: var(--green-tea);
     border-radius: 5px;
 }
+
+.quiz-box #question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--smoke);
+    border: 1px solid var(--smoke);
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+
+.buttons {
+    margin: 1.5re 0 4rem 0;
+}
+
+.btn {
+    
+}
