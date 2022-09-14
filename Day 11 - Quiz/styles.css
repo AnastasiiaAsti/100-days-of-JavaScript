@@ -97,7 +97,24 @@ p {
     outline: none;
     border: 1px solid var(--smoke);
     border-radius: 5px;
-    margin: 7px 0;
+    margin: 10px 0;
     padding: 1rem;
     width: 100%;
+    color: var(--smoke);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--green-tea);
+}
+
+.btn:active {
+    background-color: var(--blush);
+}
+
+#score {
+    color: var(--smoke);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
 }
