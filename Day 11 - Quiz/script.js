@@ -65,3 +65,13 @@ function guess(id, guess) {
         displayQuestion();
     }
 }
+
+
+//show quiz progress
+
+function showProgress() {
+    let currentQuestionNumber = quiz.questionIndex + 1;
+    let progressEl = document.getElementById('progress');
+    progressEl.innerHTML = `Question ${currentQuestionNumber} of ${quiz.question.length}`;
+}
+
