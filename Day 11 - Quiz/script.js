@@ -14,4 +14,10 @@ class Quiz {
         }
         this.questionIndex++;
     }
+
+    isEnded() {
+        return this.questionIndex === this.questions.length;
+    }
 }
+
+//create question class
