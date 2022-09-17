@@ -154,3 +154,24 @@ let quiz = new Quiz(questions);
 displayQuestion();
 
 //add a countdown
+let time = 5;
+let quizTimeInMinutes = time * 60 * 60;
+let quizTime = quizTimeInMinutes / 60;
+
+let counting = document.getElementById("count-down");
+
+function startCountDown() {
+    let quizTimer = setInterval(function() {
+        if (quizTime <= 0) {
+            clearInterval(quizTimer);
+            showScores();
+        } else {
+            quizTime--;
+            let second = Math.floor(quizTime % 60);
+            let minute = Math.floor(quizTime / 60) % 60;
+            counting.innerHTML = `TIME: ${minute} : ${second}`
+        }
+    }, 1000)
+}
+
+startCountDown();
