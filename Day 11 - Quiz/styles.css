@@ -109,7 +109,7 @@ p {
 }
 
 .btn:active {
-    background-color: var(--blush);
+    background-color: var(--breath);
 }
 
 #score {
