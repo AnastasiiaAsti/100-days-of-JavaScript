@@ -88,3 +88,58 @@ function showScores() {
     let quizEl = document, getElementById('quiz');
     quizEl.innerHTML = quizEndHTML;
 }
+
+// create quiz questions
+
+let questions = [
+    new Question(
+        "How many measures of Gordon's Gin are in a Vesper (James Bond) martini?",
+        ['1', '2', '3', '4'],
+        '3'
+    ),
+    new Question(
+        "Cacio & Pepe is a staple of what Italian city's cuisine?",
+        ['Rome', 'Napoli', 'Valencia', 'Sicily'],
+        'Rome'
+    ),
+    new Question(
+        "Where did sushi originate?",
+        ['Japan', 'China', 'Thailand', 'Vientman'],
+        "China"
+    ),
+    new Question(
+        "What is a Beaujolais?",
+        ['A type of white wine', 'A type of brandy', 'A type of red wine', 'A type of sauce'],
+        'A type of red wine'
+    ),
+    new Question(
+        "Which of the following sauces is NOT traditionally vegan - Hoisin, Worcestershire, Mustard, Wasabi?",
+        ['Hoisin', 'Worcestershire', 'Mustard', 'Wasabi'],
+        'Worcestershire'
+    ),
+    new Question(
+        'What is the world’s best-selling stout beer?',
+        ['Beamish', 'Donnybrook', 'Abraxas', 'Guinness'],
+        'Guinness'
+    ),
+    new Question(
+        'What country drinks the most coffee?',
+        ['USA', 'Italy', 'Finland', 'France'],
+        'Finland'
+    ),
+    new Question(
+        "What meat is used in a shepherd's pie?"
+        ['Lamb', 'Beef', 'Pork', 'Rabbit'],
+        'Lamb'
+    ),
+    new Question(
+        'What is the difference between brandy and cognac?',
+        ['Difference in how it is aged', 'While Cognac is twice distilled using a pot still, Brandy undergoes column distillation', 'No difference', 'Cognac must come from the Cognac region of France'],
+        'Cognac must come from the Cognac region of France'
+    ),
+    new Question(
+        'Pink Ladies and Granny Smiths are types of what fruit?',
+        ['Pears', 'Apples', 'Plums', 'Two different fruits'],
+        'Apples'
+    )
+]
