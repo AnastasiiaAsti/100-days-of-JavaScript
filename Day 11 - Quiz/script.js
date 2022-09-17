@@ -75,3 +75,16 @@ function showProgress() {
     progressEl.innerHTML = `Question ${currentQuestionNumber} of ${quiz.question.length}`;
 }
 
+//show score
+
+function showScores() {
+    let quizEndHTML = 
+    `<h1>Quiz Completed</h1>
+    <h2 id="score">You scored: ${qiuz.score} of ${quiz.guestion.length} </h2>
+    <div class="quiz-repeat">
+    <a href="index.html">Take Quiz Again</a>
+    </div>
+    `
+    let quizEl = document, getElementById('quiz');
+    quizEl.innerHTML = quizEndHTML;
+}
