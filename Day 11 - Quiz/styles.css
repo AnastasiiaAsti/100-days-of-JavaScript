@@ -37,6 +37,7 @@ p {
 
 .quiz-box {
     width: 600px;
+    min-height: 600px;
     margin: 0 auto;
     background-color: var(--blush);
     padding: 1rem 5rem 5rem;

@@ -1,13 +1,15 @@
 // create a quiz class
 class Quiz {
-    construct(questions) {
+    constructor(questions) {
         this.score = 0;
-        this.questions = question;
+        this.questions = questions;
         this.questionIndex = 0;
     }
+
     getQuestionIndex() {
-        return this.questions(this.questionIndex)
+        return this.questions[this.questionIndex];
     }
+
     guess(answer) {
         if (this.getQuestionIndex().isCorrectAnswer(answer)) {
             this.score++;
@@ -26,7 +28,7 @@ class Question {
     constructor(text, choices, answer) {
         this.text = text;
         this.choices = choices;
-        this.answer = answer
+        this.answer = answer;
     }
 
     isCorrectAnswer(choice) {
@@ -41,15 +43,15 @@ function displayQuestion() {
         showScores();
     } else {
         //show question
-        let questionEl = document.getElementById('question');
+        let questionEl = document.getElementById("question");
         questionEl.innerHTML = quiz.getQuestionIndex().text;
 
         //show options
         let choices = quiz.getQuestionIndex().choices;
         for (let i = 0; i < choices.length; i++) {
-            let choiceEl = document.getElementById('choice' + i);
+            let choiceEl = document.getElementById("choice" + i);
             choiceEl.innerHTML = choices[i];
-            guess('btn' + i, choices[i]);
+            guess("btn" + i, choices[i]);
         }
 
         showProgress();
@@ -60,7 +62,7 @@ function displayQuestion() {
 
 function guess(id, guess) {
     let button = document.getElementById(id);
-    button.onclick = function () {
+    button.onclick = function() {
         quiz.guess(guess);
         displayQuestion();
     }
@@ -71,21 +73,22 @@ function guess(id, guess) {
 
 function showProgress() {
     let currentQuestionNumber = quiz.questionIndex + 1;
-    let progressEl = document.getElementById('progress');
-    progressEl.innerHTML = `Question ${currentQuestionNumber} of ${quiz.question.length}`;
+    let progressEl = document.getElementById("progress");
+    progressEl.innerHTML = `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
 }
 
 //show score
 
 function showScores() {
-    let quizEndHTML = 
-    `<h1>Quiz Completed</h1>
-    <h2 id="score">You scored: ${qiuz.score} of ${quiz.guestion.length} </h2>
-    <div class="quiz-repeat">
-    <a href="index.html">Take Quiz Again</a>
-    </div>
-    `
-    let quizEl = document, getElementById('quiz');
+    let quizEndHTML =
+        `
+        <h1>Quiz Completed</h1> 
+        <h2 id="score">You scored: ${quiz.score} of ${quiz.questions.length} </h2>
+        <div class="quiz-repeat">
+            <a href="index.html">Take Quiz Again</a>
+        </div>
+    `;
+    let quizEl = document.getElementById("quiz");
     quizEl.innerHTML = quizEndHTML;
 }
 
@@ -118,7 +121,7 @@ let questions = [
         'Worcestershire'
     ),
     new Question(
-        'What is the world’s best-selling stout beer?',
+        "What is the world's best-selling stout beer?",
         ['Beamish', 'Donnybrook', 'Abraxas', 'Guinness'],
         'Guinness'
     ),
@@ -128,7 +131,7 @@ let questions = [
         'Finland'
     ),
     new Question(
-        "What meat is used in a shepherd's pie?"
+        "What meat is used in a shepherd's pie?",
         ['Lamb', 'Beef', 'Pork', 'Rabbit'],
         'Lamb'
     ),
@@ -143,3 +146,9 @@ let questions = [
         'Apples'
     )
 ]
+
+let quiz = new Quiz(questions);
+
+//display question
+
+displayQuestion();
