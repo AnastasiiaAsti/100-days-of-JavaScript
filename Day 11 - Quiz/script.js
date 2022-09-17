@@ -33,3 +33,25 @@ class Question {
         return this.answer === choice;
     }
 }
+
+//display question
+
+function displayQuestion() {
+    if (quiz.isEnded()) {
+        showScores();
+    } else {
+        //show question
+        let questionEl = document.getElementById('question');
+        questionEl.innerHTML = quiz.getQuestionIndex().text;
+
+        //show options
+        let choices = quiz.getQuestionIndex().choices;
+        for (let i = 0; i < choices.length; i++) {
+            let choiceEl = document.getElementById('choice' + i);
+            choiceEl.innerHTML = choices[i];
+            guess('btn' + i, choices[i]);
+        }
+
+        showProgress();
+    }
+}
