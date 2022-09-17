@@ -54,4 +54,14 @@ function displayQuestion() {
 
         showProgress();
     }
+};
+
+//guess function 
+
+function guess(id, guess) {
+    let button = document.getElementById(id);
+    button.onclick = function () {
+        quiz.guess(guess);
+        displayQuestion();
+    }
 }
