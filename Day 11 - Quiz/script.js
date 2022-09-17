@@ -85,7 +85,7 @@ function showScores() {
         <h1>Quiz Completed</h1> 
         <h2 id="score">You scored: ${quiz.score} of ${quiz.questions.length} </h2>
         <div class="quiz-repeat">
-            <a href="index.html">Take Quiz Again</a>
+            <a class="btn" href="index.html">Take Quiz Again</a>
         </div>
     `;
     let quizEl = document.getElementById("quiz");
@@ -152,3 +152,5 @@ let quiz = new Quiz(questions);
 //display question
 
 displayQuestion();
+
+//add a countdown

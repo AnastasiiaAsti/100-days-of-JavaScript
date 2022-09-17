@@ -9,11 +9,11 @@
     --wind: rgb(176, 176, 176);
     --green-tea: rgb(219, 212, 103);
     --blush: rgb(228, 213, 200);
-    --breath: rgb(234, 230, 223);
+    --breath: rgb(124, 122, 118);
 }
 
 html {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 body {
@@ -23,6 +23,10 @@ body {
 p {
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -36,13 +40,14 @@ p {
 }
 
 .quiz-box {
-    width: 600px;
-    min-height: 600px;
+    width: 800px;
+    min-height: 900px;
     margin: 0 auto;
     background-color: var(--blush);
     padding: 1rem 5rem 5rem;
     border: 3px solid var(--green-tea);
     border-radius: 10px;
+    text-align: center;
 }
 
 .quiz-box h1 {
@@ -85,16 +90,17 @@ p {
     border: 1px solid var(--smoke);
     border-width: 1px 0;
     padding: 5px 0;
+    height: 10rem;
 }
 
 .buttons {
-    margin: 1.5re 0 4rem 0;
+    margin: 2rem 0 4rem 0;
 }
 
 .btn {
     text-align: left;
     background-color: var(--wind);
-    font-size: 1.8rem;
+    font-size: 1rem;
     outline: none;
     border: 1px solid var(--smoke);
     border-radius: 5px;
